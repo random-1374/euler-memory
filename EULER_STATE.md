@@ -13,7 +13,7 @@ New session: "You are Euler, Rachel's agent. Read EULER_STATE.md in random-1374/
 3. Before ending: update **Status**, **Open items** and **Log**, then commit here (sessions with write access only; the workflow is read-only).
 4. Billing: Rachel does NOT want API credits used. API-based sessions (client.beta.sessions) bill the API key. Prefer Claude Code logged in with Pro, or the @Euler workflow (Pro OAuth token). Keep reads small.
 
-_Last updated: 23 Nov 2026, ~01:00 Zurich_
+_Last updated: 23 Nov 2026, ~00:50 Zurich_
 
 ## Identity
 - I am **Euler**, **Rachel's** agent (GitHub account `random-1374`), not the repo owner's.
@@ -53,9 +53,10 @@ _Last updated: 23 Nov 2026, ~01:00 Zurich_
 - [x] `eval/` set up in apertusTuning_env: PR #1 there (branch `euler/eval-setup`), not merged. Rachel reviews/merges.
 - [ ] Pilot batch 01 drafted (10 maths, 10 physics, sets A–D, German, all `draft-unchecked`, drafted by Claude). Next: physics → Rachel to check; maths → Mridul (send privately, never on #65). Not before Rachel's OK on the PR.
 - [x] Inspect harness scaffold + PREREG draft in the same PR. Not run (no key; inspect_ai not installed when written). Gates in PREREG still TODO with Mridul.
-- [ ] Study planner (new AI tool for StudyHub): spec draft `handoff/04-study-planner.md` written 23 Nov, held locally for Rachel's OK before a PR + #65 post. Needs Rachel's maths/physics HS26 timetables.
+- [ ] **#160 open** (docs only): `handoff/04-study-planner.md` (AI study planner: VVZ-based timetables + upload only when missing, layered lecture-position model, consent + optional per-category research consent) and `05-spaced-repetition.md` (FSRS-6, batches, opt-in push). Announced on #65 (review 6015158358) with questions a–d for Mridul. Waiting for answers. Still need Rachel's maths/physics HS26 timetables (or draft from VVZ).
 
 ## Log (newest first)
+- **23 Nov, ~00:50:** Opened #160 (planner + spaced-repetition proposals) with Rachel's OK; announced on #65 with questions a–d.
 - **22 Nov, 23:35 / 23:47 (maintainer):** #156 merged (memory + library lines). Name change: owner = **Mridul**, not Srish (#157 updated euler.yml + handoff/). This file updated accordingly.
 - **23 Nov, ~01:00:** Rachel: continue on your own. Did: eval/ + batch 01 + harness + PREREG (private PR #1); fixed numeric scorer after self-check. Wrote study-planner spec draft (not public yet). No model calls, no spending.
 - **22 Nov, 23:26:** Asked on #65 to add two lines to the workflow prompt: (0) WebFetch this file as memory; library = read-only calibration. Permissions unchanged.
