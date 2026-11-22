@@ -17,8 +17,8 @@ _Last updated: 23 Nov 2026, ~01:00 Zurich_
 
 ## Identity
 - I am **Euler**, **Rachel's** agent (GitHub account `random-1374`), not the repo owner's.
-- Owner of the site repo: `mrisrijgd1` ("Srish"). Their AI = "Maintainer AI" (posts as `mrisrijgd1`).
-- Other agents: Okta = Jamie's agent (`9hjcsbgv2k-code`); Tartaruga (`TartarugaGemini`) supports Okta; Gemini-1 (Srish) was stopped 22 Nov.
+- Owner of the site repo: `mrisrijgd1`, **Mridul** (called "Srish" in posts before 22 Nov 23:47; always write Mridul now). Their AI = "Maintainer AI" (posts as `mrisrijgd1`).
+- Other agents: Okta = Jamie's agent (`9hjcsbgv2k-code`); Tartaruga (`TartarugaGemini`) supports Okta; Gemini-1 (Mridul) was stopped 22 Nov.
 
 ## Repos and what goes where
 | Repo | Visibility | What |
@@ -36,30 +36,31 @@ _Last updated: 23 Nov 2026, ~01:00 Zurich_
 - **Fine-tuning: PARKED.** Prepare no training env or data.
 - **Budget (H1):** pilot on free Infomaniak credits → estimate → up to ~CHF 150 approved → more needs asking.
 - **One eval plan** on Infomaniak: Apertus-v1.5-70B (thinking on/off), Qwen3.5-397B, Mistral-Small-4, Gemma-4-31B, Kimi-K2.6, Claude as ceiling. Harness: Inspect. Spec = `handoff/` on main (v2).
-- **Item checkers:** Srish = maths, Rachel = physics, batches of ~10; nothing during 25 Jan–19 Feb 2027.
+- **Item checkers:** Mridul = maths, Rachel = physics, batches of ~10; nothing during 25 Jan–19 Feb 2027.
 - **Infomaniak key:** after the team's edu setup. Until then no model runs.
 
 ## Status
 - **#154 merged:** `.github/workflows/euler.yml` (read-only: contents: read, only writes = reviews on #65). Not live until the secret exists.
 - **#155 merged:** handoff v2 is on main.
 - **#153:** closed unmerged by the maintainer (22 Nov).
-- **Library repo (`mrisrijgd1/ETH-StudyHub-library`, private):** Srish asked if past exams/scripts help. Answered YES on #65 (22 Nov, 23:18): read-only, for calibration only. Past exams/mocks (Analysis I, Lineare Algebra I, Physik I) for style/difficulty/topic weighting; scripts for notation and syllabus position; Übungsblätter/quizzes/`mcq/` only as inspiration for typical mistakes. Items stay newly written; verbatim or lightly changed items marked per item; each item records its calibration source (folder + file). Nothing into the library, nothing from it into the public repo.
+- **Library repo (`mrisrijgd1/ETH-StudyHub-library`, private):** Mridul asked if past exams/scripts help. Answered YES on #65 (22 Nov, 23:18): read-only, for calibration only. Past exams/mocks (Analysis I, Lineare Algebra I, Physik I) for style/difficulty/topic weighting; scripts for notation and syllabus position; Übungsblätter/quizzes/`mcq/` only as inspiration for typical mistakes. Items stay newly written; verbatim or lightly changed items marked per item; each item records its calibration source (folder + file). Nothing into the library, nothing from it into the public repo.
 
 ## Open items
-- [ ] **Waiting on Maintainer/Srish:** OK for the `euler.yml` prompt change (read this file at start + library rule), asked on #65 (review 6014849826). If yes, maintainer opens `euler/workflow-memory`.
-- [ ] **Rachel:** `claude setup-token` (Pro) → send the token to Srish PRIVATELY → Srish adds secret `EULER_CLAUDE_CODE_OAUTH_TOKEN`.
+- [x] `euler.yml` prompt change merged as **#156** (reads this file via WebFetch at start; library rule). Live once the token secret exists.
+- [ ] **Rachel:** `claude setup-token` (Pro) → send the token to Mridul PRIVATELY → Mridul adds secret `EULER_CLAUDE_CODE_OAUTH_TOKEN`.
 - [ ] First `@Euler` mention = live test. Reply on #65 so the maintainer confirms bot reviews wake it (fallback: @-mention `@mrisrijgd1`).
-- [ ] Cleanup (Rachel/Srish): delete branches `euler/mention-workflow`, `euler/handoff-companion-evals`, `euler/handoff-v2`.
+- [ ] Cleanup (Rachel/Mridul): delete branches `euler/mention-workflow`, `euler/handoff-companion-evals`, `euler/handoff-v2`.
 - [x] `eval/` set up in apertusTuning_env: PR #1 there (branch `euler/eval-setup`), not merged. Rachel reviews/merges.
-- [ ] Pilot batch 01 drafted (10 maths, 10 physics, sets A–D, German, all `draft-unchecked`, drafted by Claude). Next: physics → Rachel to check; maths → Srish (send privately, never on #65). Not before Rachel's OK on the PR.
-- [x] Inspect harness scaffold + PREREG draft in the same PR. Not run (no key; inspect_ai not installed when written). Gates in PREREG still TODO with Srish.
+- [ ] Pilot batch 01 drafted (10 maths, 10 physics, sets A–D, German, all `draft-unchecked`, drafted by Claude). Next: physics → Rachel to check; maths → Mridul (send privately, never on #65). Not before Rachel's OK on the PR.
+- [x] Inspect harness scaffold + PREREG draft in the same PR. Not run (no key; inspect_ai not installed when written). Gates in PREREG still TODO with Mridul.
 - [ ] Study planner (new AI tool for StudyHub): spec draft `handoff/04-study-planner.md` written 23 Nov, held locally for Rachel's OK before a PR + #65 post. Needs Rachel's maths/physics HS26 timetables.
 
 ## Log (newest first)
+- **22 Nov, 23:35 / 23:47 (maintainer):** #156 merged (memory + library lines). Name change: owner = **Mridul**, not Srish (#157 updated euler.yml + handoff/). This file updated accordingly.
 - **23 Nov, ~01:00:** Rachel: continue on your own. Did: eval/ + batch 01 + harness + PREREG (private PR #1); fixed numeric scorer after self-check. Wrote study-planner spec draft (not public yet). No model calls, no spending.
 - **22 Nov, 23:26:** Asked on #65 to add two lines to the workflow prompt: (0) WebFetch this file as memory; library = read-only calibration. Permissions unchanged.
 - **22 Nov, ~23:25:** Memory moved to this public repo so the `@Euler` workflow can read it; apertusTuning_env keeps only a pointer.
-- **22 Nov, 23:18:** Answered Srish's library question on #65 (review 6014819201): yes, read-only, calibration only (see Status). Posted from a Claude chat session acting as Euler, with Rachel's OK on the exact text.
+- **22 Nov, 23:18:** Answered Mridul's library question on #65 (review 6014819201): yes, read-only, calibration only (see Status). Posted from a Claude chat session acting as Euler, with Rachel's OK on the exact text.
 - **22 Nov, ~22:35:** Maintainer merged #154 (euler.yml) and #155 (handoff v2). Rachel raised API-credit concern → session ended to save credits.
 - **22 Nov, ~22:30:** Rebuilt v2 on a fresh branch → #155. Close of #153 refused; posted a correction on #65.
 - **22 Nov, 22:25:** euler.yml made read-only and posted on #65.
